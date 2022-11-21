@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Notas alunos</title>
+</head>
+<body>
+    <header>
+        <h1> INFORMAÇÕES DOS ALUNOS</h1>
+    </header>
+    <main>
+        <h3>Informe os dados:</h3>
+        <form>
+            
+                <div class="linha">            
+                    <label for="nome">Nome do aluno: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="linha">     
+                    <label for="matricula">Matricula: </label>
+                    <input type="number" name="matricula" id="matricula">
+                </div>
+                <div class="linha">             
+                    <label for="nota1">Primeira Nota: </label>
+                    <input type="number" name="nota1" id="nota1">
+                </div>
+                <div class="linha">                
+                    <label for="nota2">Segunda Nota: </label>
+                    <input type="number" name="nota2" id="nota2" required>
+                </div>
+                <div class="linha">               
+                    <label for="nota3">Terceira Nota: </label>
+                    <input type="number" name="nota3" id="nota3" required>
+                </div>
+                <div>   
+                    <button onclick="aluno.salvar()">Salvar</button>
+                    <button onclick="aluno.excluir()">Excluir</button>          
+                </div>
+        </form>
+
+            <div class="tabela">
+                <table id="tabelaAlunos">
+                    <thead>
+                        <th>Aluno</th>
+                        <th>Matricula</th>
+                        <th class="center">1º Nota</th>
+                        <th class="center">2º Nota</th>
+                        <th class="center">3º Nota</th>
+                        <th class="center">Média</th>
+                        
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main> 
+
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,65 @@
+
+body{
+    box-sizing: border-box;
+   
+}
+
+header{
+    padding: 12px;
+    color: black;
+    text-align: center;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 30px 50px;
+}
+
+
+.linha{
+   display: grid;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    outline: 0;
+}
+
+button{
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all ease 0.2s;
+}
+
+.tabela{
+    margin-top: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, td{
+    border: 1px solid black;
+    padding: 1px 5px;
+    text-align: left;
+}
+
+table tr:nth-of-type(even){
+    background-color: #d5f0ee;
+}
+
+.center{
+    text-align: center;
+}
